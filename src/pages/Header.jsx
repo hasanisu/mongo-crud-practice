@@ -14,6 +14,7 @@ const Header = () => {
               <Nav className="me-auto">
                 <Link to="/">Home</Link>
                 <Link to="/addProduct">Product</Link>
+                <Link to="/update">Update Pro</Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

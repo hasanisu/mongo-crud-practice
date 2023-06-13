@@ -19,9 +19,10 @@ import UpdateProduct from "../pages/UpdateProduct";
                 element: <AddProduct></AddProduct>
             },
             {
-                path: '/updateProduct:id',
-                element: <UpdateProduct></UpdateProduct>
-            }
+                path: '/update/:id',
+                element: <UpdateProduct></UpdateProduct>,
+                loader: ({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+            },
         ]
         
     }
